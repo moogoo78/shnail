@@ -174,7 +174,7 @@ def set_argparse():
     parser.add_argument('-c', '--config', type=Path, default='.shnail', help='config file for copy')
     parser.add_argument('-a', '--action', default='copy', help='process action {copy|thumbnail}')
     parser.add_argument('-s', '--start_date', default=None, help='process start from')
-    parser.add_argument('-v', '--verbose', action='count', help="verbose level. v...vvv")
+    parser.add_argument('-v', '--verbose', action='count', help="verbose level. v...vvv", default=2)
     parser.add_argument('-d', '--dry_run', type=bool, action=argparse.BooleanOptionalAction, default=False, help="dry run")
     return parser.parse_args()
 
